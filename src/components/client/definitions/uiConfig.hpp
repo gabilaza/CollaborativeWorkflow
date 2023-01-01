@@ -1,0 +1,32 @@
+#ifndef __UI_CONFIG_H
+#define __UI_CONFIG_H
+
+#define BLOCK_WIDTH 300
+#define BLOCK_HEIGHT 60
+#define MARGIN 80
+#define BLOCK_BUTTON_WIDTH 80
+#define BLOCK_BUTTON_HEIGHT 40
+
+#define BLOCK_CODE_WIDTH 16
+#define BLOCK_CODE_HEIGHT 20
+
+struct UIConfig {
+    float SCREEN_WIDTH = 1200;
+    float SCREEN_HEIGHT = 800;
+    float MINSCR_WIDTH = 900;
+    float MINSCR_HEIGHT = 600;
+
+    float CODE_WIDTH = SCREEN_WIDTH-MARGIN*2;
+    float CODE_HEIGHT = SCREEN_HEIGHT-MARGIN*2;
+    float CODEEDIT_MARGIN_WIDTH = 11.5;
+    float CODEEDIT_MARGIN_HEIGHT = 20;
+    int LIMIT_COLUMN_CODE = (CODE_WIDTH-CODEEDIT_MARGIN_WIDTH*2)/BLOCK_CODE_WIDTH-1;
+    int LIMIT_LINE_CODE = (CODE_HEIGHT-CODEEDIT_MARGIN_HEIGHT*2)/BLOCK_CODE_HEIGHT;
+
+
+
+    bool sizeScreen = false;
+    bool oneTimeResize = false;
+};
+
+#endif
