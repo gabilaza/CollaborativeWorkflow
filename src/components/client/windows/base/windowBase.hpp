@@ -14,7 +14,7 @@ class WindowBase {
         std::vector <Button*> buttons;
     public:
         WindowBase(std::vector <Button*> buttons);
-        ~WindowBase();
+        virtual ~WindowBase();
 
         void run(sf::RenderWindow *window, sf::Font *font, UIConfig& config, Socket *clientFD);
 
